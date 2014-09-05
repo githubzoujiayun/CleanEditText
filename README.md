@@ -26,9 +26,9 @@ myNameInput.setOnTouchListener(new View.OnTouchListener() {
 myNameInput.setOnEditTextImeBackListener(new CleanEditText.EditTextImeBackListener() {
 	    @Override
 	    public void onImeBack(CleanEditText ctrl, String text) {
-		myNameInput.setCursorVisible(false);
-		myNameInput.clearComposingText(); // fixes underline bug
-		myNameInput.setText(myNameInput.getText().toString());
+			myNameInput.setCursorVisible(false);
+			myNameInput.clearComposingText(); // fixes underline bug
+			myNameInput.setText(myNameInput.getText().toString());
 	    }
 	});
 ```
